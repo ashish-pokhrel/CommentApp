@@ -1,0 +1,6 @@
+server:
+  port: 9003
+
+
+domain:
+  blog: http://localhost:9002/blogging/
