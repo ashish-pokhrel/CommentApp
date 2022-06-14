@@ -23,4 +23,9 @@ public class CommentController {
         commentService.save(comment);
         return "Edited successfully";
     }
+    @DeleteMapping("/delete/{id}")
+    public String deleteById(@PathVariable Long id) {
+        commentService.deleteById(id);
+        return "Deleted Successfully";
+    }
 }
