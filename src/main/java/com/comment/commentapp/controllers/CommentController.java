@@ -17,5 +17,10 @@ public class CommentController {
         commentService.save(comment);
         return "saved successfully";
     }
-
+    @PutMapping("/edit")
+    public String edit(@RequestBody Comment comment)
+    {
+        commentService.save(comment);
+        return "Edited successfully";
+    }
 }
